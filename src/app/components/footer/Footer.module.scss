@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #141218;
+  color: #fff;
+
+  @media screen and (max-width: 560px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+    font-size: 14px;
+  }
+}
+
+.rendered {
+  position: absolute;
+  right: 10px;
+  color: rgb(58, 58, 58);
+
+  @media screen and (max-width: 560px){
+    position: initial;
+    font-size: 12px;
+  }
+}

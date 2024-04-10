@@ -1,0 +1,86 @@
+@import '../../../../../assets/styles/removeButton.scss';
+
+$border-bottom: 1px solid #dedede;
+
+.card_header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: $border-bottom;
+  font-size: 18px;
+
+  .compare {
+    justify-content: end;
+  }
+
+  @media screen and (max-width: 600px){
+    font-size: 16px;
+  }
+  @media screen and (max-width: 410px){
+    font-size: 14px;
+  }
+}
+
+.city_weather_info {
+  display: flex;
+}
+
+.city_name_overflow {
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 100px;
+
+}
+
+.temperature {
+  text-align: center;
+  font-weight: bold;
+  width: 40px;
+}
+
+.weather_indicators {
+  display: flex;
+  font-size: 16px;
+}
+
+.indicators_inner {
+  display: flex;
+  justify-content: space-around;
+  
+  @media screen and (max-width: 630px){
+    flex-direction: column;
+  }
+  @media screen and (max-width: 500px){
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px){
+    display: none;
+  }
+}
+
+.indicator {
+  font-weight: bold;
+}
+
+.btn_group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+}
+
+.favourites {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.541);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.favouriteBtnActive {
+  color: #F4B30A;
+}
