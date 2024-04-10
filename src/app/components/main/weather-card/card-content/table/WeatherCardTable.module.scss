@@ -1,0 +1,38 @@
+$border-bottom: 1px solid #dedede;
+
+.daily {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 500px){
+    font-size: 14px;
+  }
+  @media screen and (max-width: 340px){
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+}
+
+.daily_forecast_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 655px){
+    margin-bottom: 10px;
+  }
+}
+
+.date {
+  text-align: center;
+  border-bottom: $border-bottom;
+}
+
+.weather_icon {
+  width: 75px;
+  height: 75px;
+}

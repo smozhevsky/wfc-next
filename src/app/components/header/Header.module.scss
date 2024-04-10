@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  z-index: 2;
+  min-width: 320px;
+
+  @media screen and (max-width: 1250px){
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  @media screen and (max-width: 375px){
+    position: absolute;
+    top: 0;
+  }
+}
+
+.toggle_button_group {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1250px){
+    flex-direction: row-reverse;
+  }
+}

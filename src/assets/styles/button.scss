@@ -1,0 +1,17 @@
+@import './colors.scss';
+
+.button {
+  height: 40px;
+  padding: .5rem .75rem;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+  background-color: $btn-primary;
+  color: #fff;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
